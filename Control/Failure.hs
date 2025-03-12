@@ -24,7 +24,7 @@ module Control.Failure
     ) where
 
 import Control.Exception (throwIO, Exception (toException), SomeException (..))
-import Control.Monad.Trans.Error ()
+import Control.Monad.Trans.Except ()
 import Control.Monad.Trans.Class (MonadTrans (lift))
 
 class Monad f => Failure e f where
